@@ -578,7 +578,7 @@ while(i<pred_days):
     else:
         
         x_input = x_input.reshape((1, n_steps,1))
-0        yhat = model.predict(x_input, verbose=0)
+        yhat = model.predict(x_input, verbose=0)
         temp_input.extend(yhat[0].tolist())
         
         lst_output.extend(yhat.tolist())
